@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WHAT TO WATCH</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* styl nagłówka */
+    header {
+      background-color: #262626;
+      height: 15vh;
+      display: flex;
+      align-items: center;
+    }
+
+    /* styl tytułu */
+    .page-title {
+      font-size: 10vh;
+      font-family: Bahnschrift;
+      flex: 1;
+      margin-right: 12.5vh;
+      text-align: center;
+      color: white;
+    }
+
+    /* styl logo w header */
+    .header img {
+      width: 10vh;
+      height: 10vh;
+      margin-left: 2.5vh;
+    }
+
+    /* styl pytania */
+    .question-title {
+      font-size: 5vh;
+      font-family: Bahnschrift;
+      text-align: center;
+      line-height: 1.2;
+      color: black;
+      margin-top: 2.5vh;
+      margin-bottom: 2.5vh;
+    }
+
+    /* styl dla sekcji z obrazami */
+    .image-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5vh;
+      background-color: gray;
+    }
+
+    /* styl dla napisów */
+    .image-title {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -400%);
+      font-size: 5vh;
+      font-family: Bahnschrift;
+      text-align: center;
+      line-height: 1.2;
+      color: black;
+      display: inline-block;
+      margin-top: 10vh;
+    }
+
+    .image-container {
+      position: relative;
+      padding: 5vh;
+    }
+
+    /* styl dla obrazów w sekcji obrazów */
+    .image-section img {
+      max-width: 100%;
+      width: 75vh;
+      height: auto;
+      margin-top: 0vh;
+    }
+
+      /* cieniowanie dookoła obrazka */
+    .image-section img:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+      opacity: 0.6;
+    }
+
+    /* styl dla stopki */
+    footer {
+      background-color: #262626;
+      height: 7vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* styl dla linków w stopce */
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-size: 2vh;
+      margin: 0 1vw;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header img">
+      <img src="logo.png" alt="logo">
+    </div>
+    <h1 class="page-title">WHAT TO WATCH</h1>
+  </header>
+  <h2 class="question-title">CZEGO SZUKASZ?</h2>
+  <div class="image-section">
+    <div class="image-container">
+      <a href="https://www.filmweb.pl/serial/Gra+o+tron-2011-476848">
+        <img src="filmy.png" alt="Filmy" title="FILMY">
+      </a>
+      <h2 class="image-title">FILMY</h2>
+    </div>
+    <div class="image-container">
+      <a href="https://www.friv.com/">
+        <img src="seriale.png" alt="Seriale" title="SERIALE">
+      </a>
+      <h2 class="image-title">SERIALE</h2>
+    </div>
+  </div>
+  <footer>
+    <a href="https://mail.google.com/">Kontakt</a>
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="https://twitter.com/">Twitter</a>
+    <a href="https://www.instagram.com/">Instagram</a>
+  </footer>
+</body>
+
+</html>
